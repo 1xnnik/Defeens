@@ -1,0 +1,153 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Arial;
+    margin: 0;
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+    .icon-bar a {
+        float: left;
+        width: 33%;
+        text-align: center;
+        padding: 12px 0;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 36px;
+    }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+.active {
+    background-color: #008a98;
+}
+
+.main-page-header {
+    width: 100%;
+    text-align: center;
+    margin-top: 10vmin;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+.active-drop, .collapsible:hover {
+        background-color: #555;
+    }
+
+.content {
+    padding: 0 0;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.image {
+    width: 33.3vw; /* 33.3% of the viewport width */
+    height: 33.3vw; /* Match height to width to maintain square shape */
+    border: 2px solid #000; /* Small border around the image */
+    border-radius: 4px; /* Optional: rounded corners */
+    object-fit: cover; /* Ensure the image covers the square without distortion */
+}
+
+.text-container {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column; /* Stack name and occupation vertically */
+    justify-content: left; /* Center content vertically */
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+.occupation {
+    font-size: 18px;
+    color: #555; /* Optional: gray color for occupation text */
+    margin: 0; /* Remove default margin */
+}
+
+.text {
+    margin-top: 10px;
+}
+.recap {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
